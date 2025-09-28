@@ -10,6 +10,9 @@ Bu proje, suyun bilinçli kullanımına dikkat çekmeyi ve su kaynaklarının ko
 * **Su Tasarrufu İpuçları:** Günlük hayatta su tasarrufu yapmanın yolları hakkında pratik ipuçları sağlar.
 * **Duyarlı Tasarım:** Masaüstü ve mobil cihazlarda sorunsuz bir deneyim için duyarlı (responsive) olarak tasarlanmıştır.
 
+### Canlı Proje
+Projenin canlı halini görmek için: [https://su-bilinci.vercel.app/](https://su-bilinci.vercel.app/)
+
 ### Kullanılan Teknolojiler
 * **HTML:** Web sayfalarının yapısını oluşturur.
 * **CSS:** Sitenin tasarımı ve görsel stilini sağlar.
