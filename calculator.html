@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su Bilinci</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="img/favicon.ico" alt="Su Bilinci Logo" style="width:50px; height:50px; vertical-align:middle; margin-right:6px;">
+                Su Bilinci
+            </a>
+            <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu">
+                <a href="index.html#water-scarcity" class="nav-link">Su Kıtlığı</a>
+                <a href="index.html#statistics" class="nav-link">İstatistikler</a>
+                <a href="index.html#tips" class="nav-link">İpuçları</a>
+                <a href="index.html#impact" class="nav-link">Çevresel Etki</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SU TÜKETİMİ HESAPLAMA -->
+    <section id="calculator" class="section calculator-section">
+        <div class="container">
+            <h2 class="section-title">Günlük Su Tüketimi Hesaplayıcısı</h2>
+            <div class="mascot-image3">
+                <img src="img/calculate.png" alt="Su Bilinci Maskotu 3" loading="lazy">
+            </div>
+            <div class="calculator-container">
+                <div class="calculator-input">
+                    <div class="input-group">
+                        <label for="shower">Duş (dakika):</label>
+                        <input type="text" inputmode="numeric" pattern="[0-9]*" id="shower" min="0" max="100" placeholder="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="dishes">Bulaşık yıkama (dakika):</label>
+                        <input type="number" id="dishes" min="0" max="100" placeholder="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="teeth">Diş fırçalama (kez):</label>
+                        <input type="number" id="teeth" min="0" max="100" placeholder="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="toilet">Tuvalet kullanımı (kez):</label>
+                        <input type="number" id="toilet" min="0" max="100" placeholder="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="cooking">Yemek yapma (dakika):</label>
+                        <input type="number" id="cooking" min="0" max="100" placeholder="0">
+                    </div>
+                </div>
+                <div class="calculator-result">
+                    <div class="calc-result">
+                        <div class="result-droplet-wrap">
+                            <!-- Su damlası SVG -->
+                            <svg id="result-droplet" viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="fillGrad" x1="0" x2="0" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#6fd8f0"/>
+                                        <stop offset="100%" stop-color="#0096c7"/>
+                                    </linearGradient>
+
+                                    <clipPath id="clipFill">
+                                        <!-- clip rect will be adjusted by JS -->
+                                        <rect id="clipRect" x="0" y="260" width="200" height="0"></rect>
+                                    </clipPath>
+                                </defs>
+
+                                <!-- outline -->
+                                <path d="M100 10 C120 40 160 78 160 140 C160 200 140 230 100 240 C60 230 40 200 40 140 C40 78 80 40 100 10 Z"
+                                      fill="#e9f8ff" stroke="rgba(0,60,80,0.06)" stroke-width="1.2"/>
+
+                                <!-- fill group clipped -->
+                                <g clip-path="url(#clipFill)">
+                                    <path d="M100 10 C120 40 160 78 160 140 C160 200 140 230 100 240 C60 230 40 200 40 140 C40 78 80 40 100 10 Z"
+                                          fill="url(#fillGrad)"/>
+                                </g>
+
+                                <!-- highlights -->
+                                <path d="M100 18 C118 44 158 80 158 140 C158 196 140 226 100 236"
+                                      fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="118" cy="46" r="8" fill="white" opacity="0.9"/>
+                            </svg>
+                            
+                            <!-- Metin overlay -->
+                            <div class="meter-text">
+                                <span id="totalUsage">0</span>
+                                <small>litre/gün</small>
+                            </div>
+                        </div>
+                        
+                        <div class="result-text">
+                            <p class="muted small">Referans: Ortalama değerlerdir</p>
+                        </div>
+                    </div>
+                    <div class="result-analysis">
+                        <div class="analysis-item">
+                            <strong>Yıllık Tüketim:</strong> <span id="yearlyUsage">0</span> litre
+                        </div>
+                        <div class="analysis-item">
+                            <strong>Değerlendirme:</strong> <span id="evaluation">Hesapla</span>
+                        </div>
+                        <div class="analysis-item">
+                            <strong>Tasarruf Potansiyeli:</strong> <span id="savings">0</span> litre/gün
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html#tips" class="btn2">Nasıl Tasarruf Ederim</a>
+        </div>
+    </section>
+
+    <script src="js/calculate.js"></script>
+</body>
+</html>
