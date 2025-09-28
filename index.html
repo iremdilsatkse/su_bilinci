@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su Bilinci</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="hero">
+        <!-- Video Arka Plan -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="video/header.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+
+        <!-- İçerik -->
+        <div class="hero-content">
+            <h1 class="hero-title">Suyun Bilinçli Kullanımı</h1>
+            <p class="hero-subtitle">Her damla değerli, geleceğimiz için bilinçli kullanalım</p>
+        </div>
+    </header>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="img/favicon.ico" alt="Su Bilinci Logo" style="width:50px; height:50px; vertical-align:middle; margin-right:6px;">
+                Su Bilinci
+            </a>
+            <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-menu">
+                <a href="#water-scarcity" class="nav-link">Su Kıtlığı</a>
+                <a href="#statistics" class="nav-link">İstatistikler</a>
+                <a href="#tips" class="nav-link">İpuçları</a>
+                <a href="#impact" class="nav-link">Çevresel Etki</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- TÜRKİYEDE SU KITLIĞI -->
+    <section id="water-scarcity" class="section water-scarcity-section">
+        <div class="container">
+            <h2 class="section-title">Türkiye'de Su Kıtlığı</h2>
+            <div class="mascot-image">
+                <img src="img/sad.png" alt="Su Bilinci Maskotu" loading="lazy">
+            </div>
+            <div class="scarcity-intro">
+                <p>Türkiye, coğrafi konumu ve iklim değişikliği nedeniyle su stresi yaşayan bir ülke. 2030 yılına kadar su fakiri ülke statüsüne geçme riski bulunuyor.</p>
+                <p>Türkiye'nin yıllık kişi başı kullanılabilir su miktarı yaklaşık 1,500 m³ olup, bu miktar su stresi sınırı olan 1,700 m³'ün altındadır. Su kaynaklarının %75'i tarımda kullanılmakta olup, bu da suyun verimli kullanılmasını zorunlu kılmaktadır.</p>
+                <p>Son yıllarda artan nüfus, sanayileşme ve iklim değişikliği, su kaynakları üzerindeki baskıyı artırmakta ve su kıtlığını derinleştirmektedir. Özellikle İç Anadolu ve Güneydoğu Anadolu bölgeleri, su kıtlığı açısından en riskli alanlardır.</p>
+            </div>
+
+            <div class="regional-scarcity">
+                <div class="region-card high-risk">
+                    <div class="region-header">
+                        <h3>Yüksek Risk Bölgeleri</h3>
+                        <div class="risk-indicator high"></div>
+                    </div>
+                    <div class="region-content">
+                        <h4>Güneydoğu Anadolu & İç Anadolu</h4>
+                        <ul>
+                            <li><strong>Konya:</strong> Kişi başı yıllık 1,200 m³</li>
+                            <li><strong>Şanlıurfa:</strong> Kişi başı yıllık 1,100 m³</li>
+                            <li><strong>Ankara:</strong> Kişi başı yıllık 1,300 m³</li>
+                        </ul>
+                        <p class="region-note">Bu bölgelerde su tasarrufu kritik öneme sahip</p>
+                    </div>
+                </div>
+
+                <div class="region-card medium-risk">
+                    <div class="region-header">
+                        <h3>Orta Risk Bölgeleri</h3>
+                        <div class="risk-indicator medium"></div>
+                    </div>
+                    <div class="region-content">
+                        <h4>Marmara & Ege</h4>
+                        <ul>
+                            <li><strong>İstanbul:</strong> Kişi başı yıllık 1,500 m³</li>
+                            <li><strong>İzmir:</strong> Kişi başı yıllık 1,600 m³</li>
+                            <li><strong>Bursa:</strong> Kişi başı yıllık 1,400 m³</li>
+                        </ul>
+                        <p class="region-note">Nüfus yoğunluğu nedeniyle dikkat gerekli</p>
+                    </div>
+                </div>
+
+                <div class="region-card low-risk">
+                    <div class="region-header">
+                        <h3>Düşük Risk Bölgeleri</h3>
+                        <div class="risk-indicator low"></div>
+                    </div>
+                    <div class="region-content">
+                        <h4>Karadeniz & Doğu Anadolu</h4>
+                        <ul>
+                            <li><strong>Trabzon:</strong> Kişi başı yıllık 2,500 m³</li>
+                            <li><strong>Rize:</strong> Kişi başı yıllık 3,200 m³</li>
+                            <li><strong>Artvin:</strong> Kişi başı yıllık 2,800 m³</li>
+                        </ul>
+                        <p class="region-note">Yağış miktarı yüksek, ancak yine de tasarruf önemli</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- İSTATİSTİK BÖLÜMÜ -->
+    <section id="statistics" class="section statistics-section">
+        <div class="container">
+            <h2 class="section-title">Su Kullanım İstatistikleri</h2>
+            <div class="mascot-image2">
+                <img src="img/think.png" alt="Su Bilinci Maskotu 2" loading="lazy">
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">150</div>
+                    <div class="stat-label">Kişi başı günlük ortalama su tüketimi (litre)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">%97</div>
+                    <div class="stat-label">Dünyadaki suyun tuzlu su oranı</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">2.2M</div>
+                    <div class="stat-label">Temiz suya erişimi olmayan insan sayısı</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">%70</div>
+                    <div class="stat-label">Tarımda kullanılan su oranı</div>
+                </div>
+            </div>
+            <div class="calculation-intro">
+                    <p>Kendi su tüketiminizi hesaplamak ister misiniz?</p>
+            </div>
+            <a href="calculator.html" class="btn">HESAPLA</a>
+        </div>
+    </section>
+
+
+    <!-- SU TASARRUFU İPUÇLARI -->
+    <section id="tips" class="section tips-section">
+        <div class="container">
+            <h2 class="section-title">Su Tasarrufu İpuçları</h2>
+            <div class="mascot-image4">
+                <img src="img/tips.png" alt="Su Bilinci Maskotu 2" loading="lazy">
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-shower"></i>
+                    </div>
+                    <h3>Duş Alırken</h3>
+                    <p>Duş süresini 5 dakika ile sınırlayın. Sabunlanırken suyu kapatın.</p>
+                    <div class="savings">Günde 50 litre tasarruf</div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h3>Musluklar</h3>
+                    <p>Dişlerinizi fırçalarken ve ellerinizi sabunlarken suyu kapatın.</p>
+                    <div class="savings">Günde 20 litre tasarruf</div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Bulaşık Yıkama</h3>
+                    <p>Bulaşık makinesini tam doldurun veya leğende yıkayın.</p>
+                    <div class="savings">Günde 30 litre tasarruf</div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Çamaşır</h3>
+                    <p>Çamaşır makinesini tam kapasiteyle çalıştırın.</p>
+                    <div class="savings">Haftada 100 litre tasarruf</div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Bahçe Sulama</h3>
+                    <p>Sabah erken veya akşam saatlerinde sulama yapın.</p>
+                    <div class="savings">%30 daha az su kullanımı</div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Sızıntı Kontrolü</h3>
+                    <p>Düzenli olarak musluk ve boru sızıntılarını kontrol edin.</p>
+                    <div class="savings">Ayda 3000 litre tasarruf</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ÇEVRESEL ETKİ -->
+    <section id="impact" class="section impact-section">
+        <div class="container">
+            <h2 class="section-title">Çevresel Etki</h2>
+            <div class="mascot-image5">
+                <img src="img/impact.png" alt="Su Bilinci Maskotu 2" loading="lazy">
+            </div>
+            <div class="impact-content">
+                <div class="impact-text">
+                    <h3>Su Tasarrufunun Faydaları</h3>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-leaf"></i> Doğal kaynakları korur</li>
+                        <li><i class="fas fa-globe"></i> İklim değişikliğiyle mücadele</li>
+                        <li><i class="fas fa-fish"></i> Su ekosistemlerini korur</li>
+                        <li><i class="fa fa-turkish-lira"></i> Su faturalarını düşürür</li>
+                        <li><i class="fas fa-heart"></i> Gelecek nesillere temiz su bırakır</li>
+                    </ul>
+                </div>
+                <div class="impact-visual">
+                    <div class="earth-container">
+                        <div id="star-1">
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-bottomright"></div>
+                                <div id="curved-corner-bottomleft"></div>
+                            </div>
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-topright"></div>
+                                <div id="curved-corner-topleft"></div>
+                            </div>
+                        </div>
+
+                        <div id="star-2">
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-bottomright"></div>
+                                <div id="curved-corner-bottomleft"></div>
+                            </div>
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-topright"></div>
+                                <div id="curved-corner-topleft"></div>
+                            </div>
+                        </div>
+
+                        <div id="star-3">
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-bottomright"></div>
+                                <div id="curved-corner-bottomleft"></div>
+                            </div>
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-topright"></div>
+                                <div id="curved-corner-topleft"></div>
+                            </div>
+                        </div>
+
+                        <div id="star-4">
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-bottomright"></div>
+                                <div id="curved-corner-bottomleft"></div>
+                            </div>
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-topright"></div>
+                                <div id="curved-corner-topleft"></div>
+                            </div>
+                        </div>
+
+                        <div id="star-5">
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-bottomright"></div>
+                                <div id="curved-corner-bottomleft"></div>
+                            </div>
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-topright"></div>
+                                <div id="curved-corner-topleft"></div>
+                            </div>
+                        </div>
+
+                        <div id="star-6">
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-bottomright"></div>
+                                <div id="curved-corner-bottomleft"></div>
+                            </div>
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-topright"></div>
+                                <div id="curved-corner-topleft"></div>
+                            </div>
+                        </div>
+
+                        <div id="star-7">
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-bottomright"></div>
+                                <div id="curved-corner-bottomleft"></div>
+                            </div>
+                            <div class="curved-corner-star">
+                                <div id="curved-corner-topright"></div>
+                                <div id="curved-corner-topleft"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="impact-message">Her tasarruf edilen damla, dünyamızı korur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLİDER -->
+    <section class="slider-section">
+        <h2 class="section-title">Dünya'yı Değiştirmek Bizim Elimizde</h2>
+
+        <div class="image-container">
+            <img class="before-image" src="img/yesil.jpg" loading="lazy">
+            <img class="after-image" src="img/kurak.png" loading="lazy">
+            <div class="slider-bar" id="sliderBar"></div>
+                <div class="slider-handle" id="sliderHandle" tabindex="0" aria-label="Kaydırıcı"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Su Bilinci</h4>
+                    <p>Suyun bilinçli kullanımı için farkındalık yaratıyoruz.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p>Önerileriniz için bize yazın.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/iremdlstkose"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/iremdlstkose"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:iremdilsatkse@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Su Bilinci. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
