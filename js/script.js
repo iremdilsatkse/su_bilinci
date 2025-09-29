@@ -129,24 +129,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Scroll animasyonları (observer varsa)
-if (window.IntersectionObserver) {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, { threshold: 0.2 });
-
-    document.querySelectorAll('.tip-card, .stat-card, .benefits-list li').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.6s ease-out';
-        observer.observe(el);
-    });
-}
 
 // Ripple effect
 function createRipple(event) {
@@ -155,6 +137,7 @@ function createRipple(event) {
     const size = Math.max(rect.width, rect.height);
     const x = event.clientX - rect.left - size / 2;
     const y = event.clientY - rect.top - size / 2;
+
     const ripple = document.createElement('span');
     ripple.style.cssText = `
         position: absolute;
@@ -169,10 +152,12 @@ function createRipple(event) {
         pointer-events: none;
     `;
     element.appendChild(ripple);
+
     setTimeout(() => {
         ripple.remove();
     }, 600);
 }
+
 const style = document.createElement('style');
 style.textContent = `
     @keyframes ripple-animation {
@@ -183,6 +168,7 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 document.querySelectorAll('.tip-card, .stat-card').forEach(element => {
     element.style.position = 'relative';
     element.style.overflow = 'hidden';
@@ -194,11 +180,11 @@ window.addEventListener('scroll', function() {
     const scrolled = window.pageYOffset;
     const parallax = document.querySelector('.hero');
     const speed = scrolled * 0.5;
+
     if (parallax) {
         parallax.style.transform = `translateY(${speed}px)`;
     }
 });
-
 
 // Konsol logu
 console.log('Su Bilinci Websitesi Yüklendi! 💧');
